@@ -6,6 +6,7 @@ import PowerOfTemurin from '../components/Temurin/PowerOfTemurin'
 import Seo from "../components/seo"
 import backgroundImage from '../images/temurin-cross.svg';
 import DownloadCounter from '../components/Temurin/DownloadCounter'
+import Projects from '../components/Projects'
 import Testimonials from '../components/Testimonials'
 
 const Index = () => {
@@ -49,6 +50,7 @@ const Index = () => {
       <LogoCarousel />
       <PowerOfTemurin />
       <DownloadCounter />
+      <Projects />
       <Testimonials />
     </Layout>
   )
