@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --purple: #14003C;
+    --pink: #FF1365;
+    --blue: #0D002A;
+}
+
+.bg-purple {
+    background-color: var(--purple)
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.gradient-border {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, var(--pink), var(--purple));
+}
