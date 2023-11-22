@@ -42,13 +42,13 @@ const FeatureColumn = ({ textContent }) => {
   return (
     <div className="flex px-32 py-12">
       <div className="flex-1" ref={imageRef}>
-        <StaticImage
+        {/* <StaticImage
           src='../images/feature-icon.svg'
           height={200}
           alt="Feature"
           className="transition-opacity duration-500"
           style={{ opacity: imageOpacity }}
-        />
+        /> */}
       </div>
       <div className="flex-1" ref={lineRef}>
         <div className="relative w-2 mx-auto">

@@ -9,17 +9,45 @@ function classNames(...classes) {
 const navigation = [
     {
         name: 'About Us',
-        href: '#',
         children: [
-            { name: 'Our Team', href: '/team' },
-            { name: 'Our History', href: '/history' },
+            { name: 'What We do', href: '#' },
+            { name: 'Business Benefits', href: '#' },
+            { name: 'Our Supporters', href: '#' },
+            { name: 'Our Adopters', href: '#' },
+            { name: 'Support Us', href: '#' },
         ],
     },
     { name: 'Latest Releases', href: '#' },
     { name: 'Marketplace', href: '#' },
-    { name: 'Projects', href: '#' },
-    { name: 'Resources', href: '#' },
-    { name: 'Community', href: '#' },
+    {
+        name: 'Projects',
+        children: [
+            { name: 'Eclipse Temurin', href: '#' },
+            { name: 'Eclipse AQAvit', href: '#' },
+            { name: 'Eclipse Mission Control', href: '#' },
+        ],
+    },
+    {
+        name: 'Resources',
+        children: [
+            { name: 'Status', href: 'https://status.adoptium.net' },
+            { name: 'Release Notes', href: '#' },
+            { name: 'Installation Guide', href: '#' },
+            { name: 'Documentation', href: '#' },
+            { name: 'Resource Directory', href: '#' },
+            { name: 'FAQs', href: '#' },
+            { name: 'Brand & Promotion', href: '#' },
+        ],
+    },
+    {
+        name: 'Community',
+        children: [
+            { name: 'Our Community', href: '#' },
+            { name: 'Support', href: '#' },
+            { name: 'News & Updates', href: '#' },
+            { name: 'Events', href: '#' },
+        ],
+    },
 ];
 
 const Navbar = () => {
@@ -99,7 +127,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
           ))}
         </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="rounded-2xl bg-transparent border-2 border-pink-500/0 text-white text-sm font-semibold py-2 px-4 gradient-border">
+        <a href="#" className="rounded-2xl bg-purple border-2 border-pink-500/0 text-white text-sm font-semibold py-2 px-4 gradient-border">
           Contact Us
         </a>
       </div>
