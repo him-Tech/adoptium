@@ -37,11 +37,11 @@ const Projects = () => {
                         </div>
                         <div className="text-white text-2xl mb-10 font-semibold">{project.title}</div>
                         <a
-                        href={project.link}
-                        className="bg-transparent border-2 border-pink-500/0 text-white font-bold py-2 px-4 rounded-2xl gradient-border"
-                        >
-                        Learn More
-                    </a>
+                          href={project.link}
+                          className="bg-transparent border-2 border-pink-500/0 text-white font-bold py-2 px-4 rounded-2xl gradient-border"
+                          >
+                          Learn More
+                        </a>
                     </div>
                     </div>
               </div>

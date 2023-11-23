@@ -1,0 +1,29 @@
+.scroll-container {
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 0.2em;
+    background: linear-gradient(to top, grey, grey);
+    clip-path: polygon(50% 0%, 100% 10%, 50% 100%, 0% 10%);
+}
+
+.progress-fill {
+    height: 100%;
+    width: 100%;
+    background: var(--pink);
+    transform-origin: 50% 0; /* Set the origin for vertical scaling */
+    transform: scaleY(0); /* Start with an empty bar */
+}
+
+.scroll-item {
+    opacity: 0.5;
+}
+
+.scroll-item.active {
+    opacity: 1;
+}

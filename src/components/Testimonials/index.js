@@ -4,18 +4,18 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import "./Testimonials.css";
 
 const testimonialData = [
-    {
-      quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      name: "Joe Bloggs",
-      role: "CEO at Google",
-      image: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    name: "Joe Bloggs",
+    role: "CEO at Google",
+    image: "https://th.bing.com/th/id/OIP.sYE4E2Y8K4hHU21bS0zx2QHaH4?rs=1&pid=ImgDetMain"
+  },
+  {
+      quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+      name: "Jane Doe",
+      role: "CTO at Meta",
+      image: "https://th.bing.com/th/id/OIP.EhdrnPDN08Vtj8MgbvlOxQHaHa?rs=1&pid=ImgDetMain?"
     },
-    {
-        quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        name: "Jane Doe",
-        role: "Microsoft Things",
-        image: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
-      },
   ];
 
   const Testimonials = () => {
