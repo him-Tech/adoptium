@@ -1,7 +1,6 @@
 import React from "react";
 
-import { StaticImage } from "gatsby-plugin-image"
-
+// @ts-ignore
 import ScrollDivider from '../../images/scroll-divider.svg';
 
 const UiMobileScroll = ({data}) => {

@@ -1,10 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { StaticImage } from "gatsby-plugin-image"
 import './UiVirtualScroll.css';
 
 import UiMobileScroll from './mobile';
-
-import ScrollDivider from '../../images/scroll-divider.svg';
 
 const data = [
   {
@@ -27,13 +24,14 @@ const data = [
 const UiVirtualScroll = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const progressFillRef = useRef<HTMLDivElement>(null);
+  const progressDotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollContainer = scrollContainerRef.current;
       const progressBar = progressFillRef.current;
       if (!scrollContainer || !progressBar) {
-        return; // Exit if scrollContainer is null
+        return; // Exit if any are null
       }
 
       const textBlocks = scrollContainer.querySelectorAll('.text-scroll-item')
@@ -68,6 +66,15 @@ const UiVirtualScroll = () => {
           progress = progress - 0.15;
         }
         progressFillRef.current.style.transform = `scaleY(${progress})`;
+
+        if (progressDotRef.current) {
+          if (progress === 1) {
+            progress= progress - 0.15;
+          }
+
+          const dotPosition = progress * (scrollContainerRef.current ? scrollContainerRef.current.offsetHeight : 0);
+          progressDotRef.current.style.top = `${dotPosition}px`;
+        }
       }
     };
 
@@ -99,6 +106,7 @@ const UiVirtualScroll = () => {
           <div className="progress absolute top-4 bottom-4 left-0 right-0">
             <div className="progress-fill" ref={progressFillRef}></div>
           </div>
+          <div className="progress-dot" ref={progressDotRef}></div>
         </div>
 
         {/* Header and Description Column */}
@@ -106,7 +114,7 @@ const UiVirtualScroll = () => {
           {data.map((item, index) => (
             <div
               // append active class to first item
-              className={`flex flex-col flex-1 p-4 text-scroll-item scroll-item ${index === 0 ? 'active' : ''}`}
+              className={`flex flex-col flex-1 p-10 text-scroll-item scroll-item ${index === 0 ? 'active' : ''}`}
               key={index}
             >
               <h1 className="text-xl pt-8 my-5 font-bold">

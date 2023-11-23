@@ -20,6 +20,16 @@
     transform: scaleY(0); /* Start with an empty bar */
 }
 
+.progress-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1em;
+    height: 1em;
+    background-color: var(--pink);
+    border-radius: 50%;
+}
+
 .scroll-item {
     opacity: 0.5;
 }
