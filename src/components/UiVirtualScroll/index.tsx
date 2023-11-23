@@ -87,7 +87,7 @@ const UiVirtualScroll = () => {
       {/* Desktop Version */}
       <div className="hidden lg:flex scroll-container h-screen m-12" ref={scrollContainerRef}>
         {/* Image Column */}
-        <div className="flex flex-col flex-1 p-4">
+        <div className="flex flex-col h-23 ml-8 flex-1 p-4">
           {data.map((item, index) => {
             const image = require(`../../images/${item.image}`);
             return (
@@ -114,10 +114,10 @@ const UiVirtualScroll = () => {
           {data.map((item, index) => (
             <div
               // append active class to first item
-              className={`flex flex-col flex-1 p-10 text-scroll-item scroll-item ${index === 0 ? 'active' : ''}`}
+              className={`flex flex-col justify-center flex-1 text-scroll-item scroll-item ${index === 0 ? 'active' : ''}`}
               key={index}
             >
-              <h1 className="text-xl pt-8 my-5 font-bold">
+              <h1 className="text-xl md-pt-6 my-5 font-bold">
                 {item.title}
               </h1>
               <p className="text-base text-white-600">

@@ -5,8 +5,7 @@ import ScrollDivider from '../../images/scroll-divider.svg';
 
 const UiMobileScroll = ({data}) => {
     return (
-        <>
-        {data.map((item, index) => {
+        data.map((item, index) => {
             const image = require(`../../images/${item.image}`);
             return (
                 // render an image in the center and then the text below it centered
@@ -16,7 +15,7 @@ const UiMobileScroll = ({data}) => {
                         alt="Description"
                         className="w-full h-1/3 object-cover"
                     />
-                    <img alt='scroll divider' src={ScrollDivider} />
+                    <img src={ScrollDivider} alt='scroll-divider' />
                     <div className="flex flex-col flex-1 p-4">
                     <h1 className="text-xl my-5 font-bold">
                         {item.title}
@@ -27,8 +26,7 @@ const UiMobileScroll = ({data}) => {
                     </div>
                 </div>
             )
-        })}
-        </>
+        })
     )
 }
 
