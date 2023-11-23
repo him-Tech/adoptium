@@ -9,7 +9,7 @@ const PowerOfTemurin = () => {
           The Power of Eclipse Temurin™
         </h2>
         <h3 className="text-center text-m font-light text-gray-500 py-4">
-          Eclipse Temurin offers high-performance, cross-platform, open-source Java runtime binaries that are enterprise-ready and Java SE TCK-tested for general use in the Java ecosystem.
+          Eclipse Temurin offers high-performance, cross-platform, open-source Java™ runtime binaries that are enterprise-ready and Java SE TCK-tested for general use in the Java ecosystem.
         </h3>
         <a
           href="#"

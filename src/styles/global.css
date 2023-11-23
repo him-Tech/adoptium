@@ -27,5 +27,9 @@
 
 .gradient-border {
     border-image-slice: 1;
-    border-image-source: linear-gradient(to right, var(--pink), var(--purple));
+    border-image-source: linear-gradient(to bottom right, var(--pink), var(--purple));
+}
+
+.gradient-border:hover {
+    border-image-source: linear-gradient(to top left, var(--pink), var(--purple));
 }

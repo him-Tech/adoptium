@@ -127,7 +127,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
           ))}
         </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="rounded-2xl bg-purple border-2 border-pink-500/0 text-white text-sm font-semibold py-2 px-4 gradient-border">
+        <a href="#" className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-sm font-semibold py-2 px-4">
           Contact Us
         </a>
       </div>

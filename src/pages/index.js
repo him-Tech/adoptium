@@ -40,7 +40,7 @@ const Index = () => {
                    Download Temurin
                 </a>
                 <a href="#" className="text-sm underline font-semibold leading-6 text-white-900">
-                  Learn More
+                  Other Platforms
                 </a>
               </div>
             </div>
