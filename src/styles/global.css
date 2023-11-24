@@ -2,34 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+body {
+  font-family: "Hanken Grotesk", sans-serif !important;
+}
 :root {
-    --purple: #14003C;
-    --pink: #FF1365;
-    --blue: #0D002A;
+  --purple: #14003c;
+  --pink: #ff1365;
+  --blue: #0d002a;
 }
 
 .bg-purple {
-    background-color: var(--purple)
+  background-color: var(--purple);
 }
 
 .bg-pink {
-    background-color: var(--pink);
+  background-color: var(--pink);
 }
 
 .bg-blue {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 
 .text-pink {
-    color: var(--pink);
+  color: var(--pink);
 }
 
 .gradient-border {
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to bottom right, var(--pink), var(--purple));
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to bottom right,
+    var(--pink),
+    var(--purple)
+  );
 }
 
 .gradient-border:hover {
-    border-image-source: linear-gradient(to top left, var(--pink), var(--purple));
+  border-image-source: linear-gradient(to top left, var(--pink), var(--purple));
 }

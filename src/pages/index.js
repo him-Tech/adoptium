@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react"
 
-import Layout from '../components/layout'
-import LogoCarousel from '../components/LogoCarousel'
-import PowerOfTemurin from '../components/Temurin/PowerOfTemurin'
+import Layout from "../components/layout"
+import LogoCarousel from "../components/LogoCarousel"
+import PowerOfTemurin from "../components/Temurin/PowerOfTemurin"
 import Seo from "../components/seo"
-import backgroundImage from '../images/temurin-cross.svg';
-import DownloadCounter from '../components/Temurin/DownloadCounter'
-import Projects from '../components/Projects'
-import Testimonials from '../components/Testimonials'
+import backgroundImage from "../images/temurin-cross.svg"
+import DownloadCounter from "../components/Temurin/DownloadCounter"
+import Projects from "../components/Projects"
+import Testimonials from "../components/Testimonials"
+import LatestNews from "../components/latest-news/LatestNews "
 
 const Index = () => {
   return (
@@ -22,12 +23,11 @@ const Index = () => {
           <div
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             aria-hidden="true"
-          >
-          </div>
+          ></div>
           <div className="mx-auto max-w-2xl pb-20 pt-32 sm:pt-48 lg:pt-56">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-7xl">
-              The Power of Eclipse Temurin™
+                The Power of Eclipse Temurin™
               </h1>
               <p className="mt-6 text-lg leading-8 text-white-600">
                 Download Temurin for macOS aarch64
@@ -39,7 +39,10 @@ const Index = () => {
                 >
                    Download Temurin
                 </a>
-                <a href="#" className="text-sm underline font-semibold leading-6 text-white-900">
+                <a
+                  href="#"
+                  className="text-sm underline font-semibold leading-6 text-white-900"
+                >
                   Other Platforms
                 </a>
               </div>
@@ -52,6 +55,7 @@ const Index = () => {
       <DownloadCounter />
       <Projects />
       <Testimonials />
+      <LatestNews />
     </Layout>
   )
 }

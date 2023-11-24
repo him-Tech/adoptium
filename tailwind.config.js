@@ -5,8 +5,11 @@ module.exports = {
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        hanken: ["Hanken Grotesk", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
-
