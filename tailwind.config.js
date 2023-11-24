@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         hanken: ["Hanken Grotesk", "sans-serif"],
       },
+      colors: {
+        primary: "#FF1464",
+      },
     },
   },
   plugins: [],

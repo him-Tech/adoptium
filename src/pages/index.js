@@ -9,6 +9,7 @@ import DownloadCounter from "../components/Temurin/DownloadCounter"
 import Projects from "../components/Projects"
 import Testimonials from "../components/Testimonials"
 import LatestNews from "../components/latest-news/LatestNews "
+import LatestNewsSlider from "../components/latest-news/LatestNewsSlider"
 
 const Index = () => {
   return (
