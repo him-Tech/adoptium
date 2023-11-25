@@ -43,7 +43,7 @@ const LatestNews = () => {
   return (
     <>
       <div className="bg-purple py-14 sm:py-18 xl:px-0 lg:px-8 px-0">
-        <div className="mx-auto max-w-[1264px] w-full flex lg:flex-row overflow-hidden flex-col items-start lg:items-center justify-center space-x-8 xl:space-x-16 ">
+        <div className="mx-auto max-w-[1264px] w-full flex lg:flex-row flex-col items-start lg:items-center justify-center lg:space-x-8 xl:space-x-16 relative overflow-hidden">
           <div className="max-w-[436px] w-full mb-16 lg:mb-0 px-6">
             <h2 className="here text-4xl lg:text-5xl leading-[44px] lg:leading-[56px] font-semibold text-white-900">
               Latest news and updates
@@ -60,7 +60,7 @@ const LatestNews = () => {
               See all news
             </a>
           </div>
-          <div className="max-w-[780px] w-full flex gap-4 xl:gap-x-8  ">
+          <div className="max-w-[780px] w-full lg:flex gap-4 xl:gap-x-8 hidden  ">
             {/* First set of news items */}
             <div className="max-w-[374px] w-full lg:flex hidden flex-col space-y-4 xl:space-y-8">
               {set1.map((card, more) => (
@@ -112,7 +112,7 @@ const LatestNews = () => {
               ))}
             </div>
           </div>
-          <div className="w-full lg:hidden overflow-hidden !ml-6">
+          <div className="w-full flex relative lg:hidden">
             <LatestNewsSlider />
           </div>
         </div>

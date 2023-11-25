@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/swiper-bundle.css"
 import SwiperCore, { Navigation } from "swiper"
-import { RedIcon } from "./AppIcons"
+import { LeftSlider, Leftbtn, RedIcon, RightSlider } from "./AppIcons"
 
 // Use SwiperCore modules
 SwiperCore.use([Navigation])
@@ -64,27 +64,16 @@ const LatestNewsSlider = () => {
   }
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden pl-6 max-w-full relative">
       <Swiper
         ref={swiperRef}
-        slidesPerView={1}
+        slidesPerView="auto"
         spaceBetween={16}
         loop={true}
         className="mySwiper lg:hidden"
-        breakpoints={{
-          414: {
-            slidesPerView: 1.2,
-          },
-          550: {
-            slidesPerView: 2.5,
-          },
-          800: {
-            slidesPerView: 3,
-          },
-        }}
       >
         {newsmap.map((card, index) => (
-          <SwiperSlide className={`!w-64 newscard p-8 `} key={index}>
+          <SwiperSlide className={`!w-[256px] newscard p-6 m-auto`} key={index}>
             <h2 className="text-primary text-base leading-6 font-bold m-0 flex items-center gap-x-3">
               <RedIcon />
               {card.news}
@@ -107,13 +96,14 @@ const LatestNewsSlider = () => {
         ))}
       </Swiper>
 
-      {/* Navigation buttons */}
-      <button onClick={handlePrev} className="text-white">
-        Previous
-      </button>
-      <button onClick={handleNext} className="text-white">
-        Next
-      </button>
+      <div className="flex gap-4 items-center justify-center mt-16 mb-8">
+        <button onClick={handlePrev} className="text-white">
+          <LeftSlider />
+        </button>
+        <button onClick={handleNext} className="text-white">
+          <RightSlider />
+        </button>
+      </div>
     </div>
   )
 }
