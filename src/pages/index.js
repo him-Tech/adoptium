@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 import LogoCarousel from "../components/LogoCarousel"
 import PowerOfTemurin from "../components/Temurin/PowerOfTemurin"
 import Seo from "../components/seo"
-import backgroundImage from "../images/temurin-cross.svg"
+import backgroundImage from "../images/hero-img.png"
 import DownloadCounter from "../components/Temurin/DownloadCounter"
 import Projects from "../components/Projects"
 import Testimonials from "../components/Testimonials"
-import LatestNews from "../components/latest-news/LatestNews "
+import LatestNews from "../components/latest-news/LatestNews"
 import LatestNewsSlider from "../components/latest-news/LatestNewsSlider"
 
 const Index = () => {
@@ -25,9 +25,9 @@ const Index = () => {
             className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
             aria-hidden="true"
           ></div>
-          <div className="mx-auto max-w-2xl pb-20 pt-32 sm:pt-48 lg:pt-56">
+          <div className="mx-auto max-w-[832px] pb-20 pt-32 sm:pt-48 lg:pt-56">
             <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-white-900 sm:text-7xl">
+              <h1 className="text-4xl font-bold tracking-tight leading-[120px] text-white-900 sm:text-[104px]">
                 The Power of Eclipse Temurin™
               </h1>
               <p className="mt-6 text-lg leading-8 text-white-600">

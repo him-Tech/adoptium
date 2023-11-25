@@ -5,6 +5,7 @@ import {
   XMarkIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/outline"
+import { Logo } from "./common/Icon"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -57,21 +58,14 @@ const navigation = [
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header className="absolute inset-x-0 top-0 z-50 ">
+    <header className="absolute max-w-[1288px] w-full mx-auto px-3 inset-x-0 top-0 z-50">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Eclipse Adoptium</span>
-            <img
-              className="h-8 w-auto"
-              src="https://raw.githubusercontent.com/adoptium/adoptium.net/main/src/images/adoptium-logo-dark.svg"
-              alt=""
-            />
-          </a>
-        </div>
+        <a href="/" className="-m-1.5 p-1.5">
+          <Logo />
+        </a>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -91,7 +85,7 @@ const Navbar = () => {
                 className="relative inline-block text-left"
               >
                 <div>
-                  <Menu.Button className="inline-flex w-full justify-center rounded-md text-sm font-semibold text-white-900 hover:bg-white-50">
+                  <Menu.Button className="inline-flex w-full gap-2 justify-center rounded-md text-sm font-semibold text-white-900 hover:bg-white-50">
                     {item.name}
                     <ChevronDownIcon
                       className="-mr-1 h-5 w-5"
@@ -146,14 +140,9 @@ const Navbar = () => {
             )
           )}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="#"
-            className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-sm font-semibold py-2 px-4"
-          >
-            Contact Us
-          </a>
-        </div>
+        <button className="rounded-[88px] bg-transparent gradient-border border-2  border-pink-500/0 text-white text-sm font-semibold py-2 px-4">
+          Contact Us
+        </button>
       </nav>
       <Dialog
         as="div"
