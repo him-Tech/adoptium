@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import LogoCarousel from "../components/LogoCarousel"
 import PowerOfTemurin from "../components/Temurin/PowerOfTemurin"
 import Seo from "../components/seo"
-import backgroundImage from "../images/hero-img-hero.png"
 import DownloadCounter from "../components/Temurin/DownloadCounter"
 import Projects from "../components/Projects"
 import Testimonials from "../components/Testimonials"
@@ -54,6 +53,7 @@ const Index = () => {
         </div>
       </div>
       <LogoCarousel />
+      <div className="w-full h-[1px] my-8 lg:my-16 bg-[#3E3355]"></div>
       <PowerOfTemurin />
       <DownloadCounter />
       <Projects />

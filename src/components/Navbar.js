@@ -138,7 +138,7 @@ const Navbar = () => {
             )
           )}
         </div>
-        <button className="rounded-[88px] hidden sm:block bg-transparent gradient-border border-2  border-pink-500/0 text-white text-sm font-semibold py-2 px-4">
+        <button className="rounded-[88px] hidden sm:block bg-transparent gradient-border border-2  border-pink-500/0 text-white text-sm font-semibold w-[153px] h-[48px]">
           Contact Us
         </button>
       </nav>
@@ -184,7 +184,7 @@ const Navbar = () => {
               <div className="py-6">
                 <a
                   href="#"
-                  className="bg-transparent border-2 border-pink-500/0 text-white font-bold py-2 px-4 rounded-2xl gradient-border"
+                  className="bg-transparent border-2 border-pink-500/0 text-white font-bold w-[153px] h-[48px] rounded-2xl gradient-border"
                 >
                   Contact Us
                 </a>
