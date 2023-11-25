@@ -104,20 +104,18 @@ const Navbar = () => {
                   leaveTo="transform opacity-0 scale-95"
                 >
                   <Menu.Items
-                    className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-blue shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-[#0E002A] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                     style={{ minWidth: "max-content" }}
                   >
-                    <div className="py-1">
+                    <div className="py-6 px-4">
                       {item.children.map(child => (
                         <Menu.Item key={child.name}>
                           {({ active }) => (
                             <a
                               href={child.href}
                               className={classNames(
-                                active
-                                  ? "bg-gray-100 text-pink-900"
-                                  : "text-white-700",
-                                "block px-4 py-2 text-sm"
+                                active ? " text-[#A80D55]" : "text-white-700",
+                                "block  py-3 text-sm border-b border-[#3E3355]"
                               )}
                             >
                               {child.name}
