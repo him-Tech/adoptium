@@ -8,14 +8,14 @@ const PowerOfTemurin = () => {
         <h2 className="text-center text-3xl font-semibold text-white-900">
           The Power of Eclipse Temurin™
         </h2>
-        <h3 className="text-center text-m font-light text-gray-500 py-4">
+        <h3 className="text-center text-m font-light text-[#C4BFCE] mt-6">
           Eclipse Temurin offers high-performance, cross-platform, open-source
-          Java™ runtime binaries that are enterprise-ready and Java SE
-          TCK-tested for general use in the Java ecosystem.
+          Java runtime binaries that are enterprise-ready and Java SE TCK-tested
+          for general use in the Java ecosystem.
         </h3>
         <a
           href="#"
-          className="bg-transparent border-2 border-pink-500/0 text-white font-bold py-2 px-4 rounded-2xl gradient-border"
+          className="bg-transparent mt-10 border-2 border-pink-500/0 text-white font-bold py-2 px-4 rounded-2xl gradient-border"
         >
           Business Benefits
         </a>
