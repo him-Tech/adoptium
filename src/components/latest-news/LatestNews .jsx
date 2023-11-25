@@ -1,5 +1,6 @@
 import React from "react"
 import LatestNewsSlider from "./LatestNewsSlider"
+import { RedIcon } from "./AppIcons"
 
 const LatestNews = () => {
   const newsmap = [
@@ -41,13 +42,13 @@ const LatestNews = () => {
 
   return (
     <>
-      <div className="bg-purple py-14 sm:py-18 xl:px-0 lg:px-8 px-4">
-        <div className="mx-auto max-w-[1264px] flex lg:flex-row flex-col items-center justify-center space-x-8 xl:space-x-16">
-          <div className="max-w-[436px] w-full ">
-            <h2 className="here text-5xl leading-[56px] font-semibold text-white-900">
+      <div className="bg-purple py-14 sm:py-18 xl:px-0 lg:px-8 px-0">
+        <div className="mx-auto max-w-[1264px] w-full flex lg:flex-row overflow-hidden flex-col items-start lg:items-center justify-center space-x-8 xl:space-x-16 ">
+          <div className="max-w-[436px] w-full mb-16 lg:mb-0 px-6">
+            <h2 className="here text-4xl lg:text-5xl leading-[44px] lg:leading-[56px] font-semibold text-white-900">
               Latest news and updates
             </h2>
-            <h3 className="text-xl font-normal leading-7 text-[#C4BFCE] pt-6 mb-8">
+            <h3 className="text-xl font-normal leading-7 text-[#C4BFCE] mt-6 mb-8">
               Eclipse Temurin offers high-performance, cross-platform,
               open-source Java runtime binaries that are enterprise-ready and
               Java SE TCK-tested for general use in the Java ecosystem.
@@ -59,12 +60,13 @@ const LatestNews = () => {
               See all news
             </a>
           </div>
-          <div className="max-w-[780px] w-full lg:flex hidden gap-4 xl:gap-x-8 ">
+          <div className="max-w-[780px] w-full flex gap-4 xl:gap-x-8  ">
             {/* First set of news items */}
-            <div className="max-w-[374px] w-full flex flex-col space-y-4 xl:space-y-8">
+            <div className="max-w-[374px] w-full lg:flex hidden flex-col space-y-4 xl:space-y-8">
               {set1.map((card, more) => (
                 <div key={more} className="newscard p-8 xl:p-10">
                   <h2 className="text-primary text-lg leading-6 font-bold m-0 flex items-center gap-x-3">
+                    <RedIcon />
                     {card.news}
                   </h2>
                   <p className="text-white text-lg xl:text-xl font-normal leading-6 xl:leading-7 my-2">
@@ -85,10 +87,11 @@ const LatestNews = () => {
               ))}
             </div>
             {/* Second set of news items */}
-            <div className="max-w-[374px] w-full  flex flex-col space-y-4 xl:space-y-8 mt-16">
+            <div className="max-w-[374px] w-full  lg:flex hidden flex-col space-y-4 xl:space-y-8 mt-16">
               {set2.map((card, more) => (
                 <div key={more} className="newscard p-8 xl:p-10">
                   <h2 className="text-primary text-lg leading-6 font-bold m-0 flex items-center gap-x-3">
+                    <RedIcon />
                     {card.news}
                   </h2>
                   <p className="text-white text-lg xl:text-xl font-normal leading-6 xl:leading-7 my-2">
