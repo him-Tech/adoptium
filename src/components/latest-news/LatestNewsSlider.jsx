@@ -1,8 +1,7 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/swiper-bundle.css"
-import SwiperCore, { Navigation } from "swiper/core"
-import { Link } from "react-scroll"
+import SwiperCore, { Navigation } from "swiper"
 import { RedIcon } from "./AppIcons"
 
 // Use SwiperCore modules
@@ -44,20 +43,40 @@ const LatestNewsSlider = () => {
     },
   ]
 
+  const swiperRef = useRef(null)
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.init()
+    }
+  }, [])
+
+  const handlePrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev()
+    }
+  }
+
+  const handleNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext()
+    }
+  }
+
   return (
     <div className="overflow-hidden">
       <Swiper
+        ref={swiperRef}
         slidesPerView={1}
         spaceBetween={16}
-        navigation={true}
         loop={true}
-        className="mySwiper lg:hidden flex justify-center"
+        className="mySwiper lg:hidden"
         breakpoints={{
           414: {
             slidesPerView: 1.2,
           },
           550: {
-            slidesPerView: 2,
+            slidesPerView: 2.5,
           },
           800: {
             slidesPerView: 3,
@@ -65,33 +84,36 @@ const LatestNewsSlider = () => {
         }}
       >
         {newsmap.map((card, index) => (
-          <SwiperSlide
-            key={index}
-            style={{
-              width: "320px",
-            }}
-          >
-            <div className="newscard  p-8">
-              <h2 className="text-primary text-base leading-6 font-bold m-0 flex items-center gap-x-3">
-                <RedIcon />
-                {card.news}
-              </h2>
-              <p className="text-white text-xl font-normal leading-7 mt-6 mb-2">
-                {card.content}
-              </p>
-              <span className="text-sm text-[#C4BFCE] font-normal leading-5 block mb-6">
-                {card.Date}
-              </span>
-              <Link
-                to={card.link}
-                className="py-3 text-base font-bold leading-6 text-white  block border-b-[1.5px] border-white w-fit"
-              >
-                Read More
-              </Link>
-            </div>
+          <SwiperSlide className={`!w-64 newscard p-8 `} key={index}>
+            <h2 className="text-primary text-base leading-6 font-bold m-0 flex items-center gap-x-3">
+              <RedIcon />
+              {card.news}
+            </h2>
+            <p className="text-white text-xl  font-normal leading-7 mt-6">
+              {card.content}
+            </p>
+            <span className="text-sm text-[#C4BFCE] font-normal leading-5 block mt-2 mb-6">
+              {card.Date}
+            </span>
+            <a
+              href={card.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-3 text-base font-bold leading-6 text-white mt-2 block border-b-[1.5px] border-white w-fit"
+            >
+              Read More
+            </a>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Navigation buttons */}
+      <button onClick={handlePrev} className="text-white">
+        Previous
+      </button>
+      <button onClick={handleNext} className="text-white">
+        Next
+      </button>
     </div>
   )
 }
