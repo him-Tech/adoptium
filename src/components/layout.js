@@ -9,6 +9,7 @@ import * as React from "react"
 import Navbar from "./Navbar"
 
 import "./layout.css"
+import "../styles/latest.css"
 import Footer from "./Footer"
 
 const Layout = ({ children }) => {

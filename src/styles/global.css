@@ -12,7 +12,6 @@ body {
   --pink: #ff1365;
   --blue: #0d002a;
 }
-
 .bg-purple {
   background-color: var(--purple);
 }
