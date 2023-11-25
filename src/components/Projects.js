@@ -36,8 +36,8 @@ const Projects = () => {
           <div className="  max-w-[400px] h-[420px] sm:h-[520px] w-full ">
             <div className="bg-white flex justify-between flex-col bg-opacity-5 p-8 xl:p-[64px] h-full rounded-3xl border-2 border-white border-opacity-50">
               <StaticImage
-                src="../images/about-products-img-2.png"
-                alt="images/about-products-img-2.png"
+                src="../images/about-products-img-temurin.png"
+                alt="images/about-products-img-temurin.png"
                 height={120}
                 class="w-[120px]"
               />
@@ -88,8 +88,8 @@ const Projects = () => {
           <div className="  max-w-[400px] h-[420px] sm:h-[520px] w-full ">
             <div className="bg-white flex justify-between flex-col bg-opacity-5 p-8 xl:p-[64px] h-full rounded-3xl border-2 border-white border-opacity-50">
               <StaticImage
-                src="../images/about-products-img-2.png"
-                alt="images/about-products-img-2.png"
+                src="../images/about-products-img-mission.png"
+                alt="images/about-products-img-mission.png"
                 height={120}
                 class="w-[120px]"
               />
