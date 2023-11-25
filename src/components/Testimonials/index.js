@@ -52,7 +52,7 @@ const Testimonials = () => {
   const testimonialKey = `${currentTestimonial}-${slideDirection}`
 
   return (
-    <section className="bg-blue ">
+    <section className="bg-blue overflow-x-hidden">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         <figure className="max-w-screen-md mx-auto" key={testimonialKey}>
           <svg
