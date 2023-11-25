@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <header className="absolute max-w-[1288px] w-full mx-auto px-3 inset-x-0 top-0 z-50">
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center gap-5 justify-between py-6"
         aria-label="Global"
       >
         <a href="/" className="-m-1.5 p-1.5">
@@ -76,7 +76,7 @@ const Navbar = () => {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-6 xl:gap-x-12">
           {navigation.map(item =>
             item.children ? (
               <Menu
@@ -104,20 +104,18 @@ const Navbar = () => {
                   leaveTo="transform opacity-0 scale-95"
                 >
                   <Menu.Items
-                    className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-blue shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                    className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-[#0E002A] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                     style={{ minWidth: "max-content" }}
                   >
-                    <div className="py-1">
+                    <div className="py-6 px-4">
                       {item.children.map(child => (
                         <Menu.Item key={child.name}>
                           {({ active }) => (
                             <a
                               href={child.href}
                               className={classNames(
-                                active
-                                  ? "bg-gray-100 text-pink-900"
-                                  : "text-white-700",
-                                "block px-4 py-2 text-sm"
+                                active ? " text-[#A80D55]" : "text-white-700",
+                                "block  py-3 text-sm border-b border-[#3E3355]"
                               )}
                             >
                               {child.name}
@@ -140,7 +138,7 @@ const Navbar = () => {
             )
           )}
         </div>
-        <button className="rounded-[88px] bg-transparent gradient-border border-2  border-pink-500/0 text-white text-sm font-semibold py-2 px-4">
+        <button className="rounded-[88px] hidden sm:block bg-transparent gradient-border border-2  border-pink-500/0 text-white text-sm font-semibold py-2 px-4">
           Contact Us
         </button>
       </nav>
