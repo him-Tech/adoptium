@@ -7,6 +7,7 @@
 body {
   font-family: "Hanken Grotesk", sans-serif !important;
   background-color: #14003c;
+  z-index: -10 !important;
 }
 :root {
   --purple: #14003c;
