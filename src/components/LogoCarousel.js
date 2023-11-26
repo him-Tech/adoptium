@@ -1,41 +1,77 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import {
+  AdobeIcon,
+  AsansIcon,
+  GithubIcon,
+  GoogleIcon,
+  SlackIcon,
+  TogglIcon,
+} from "./common/Icon"
+import Slider from "react-slick"
 
 const LogoCarousel = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+    ],
+  }
   return (
-    <div className="bg-purple py-14 sm:py-18">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 left-[50%] translate-x-[-50%] ">
-        <h2 className="text-center text-[20px] font-normal leading-7 font-hanken text-[#C4BFCE]">
-          Temurin has been adopted by over 30 companies
-        </h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <StaticImage
-            src="../images/atlassian.svg"
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            alt="github"
-          />
-          <StaticImage
-            src="../images/atlassian.svg"
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            alt="github"
-          />
-          <StaticImage
-            src="../images/atlassian.svg"
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            alt="github"
-          />
-          <StaticImage
-            src="../images/atlassian.svg"
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            alt="github"
-          />
-          <StaticImage
-            src="../images/atlassian.svg"
-            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-            alt="github"
-          />
-        </div>
-      </div>
+    <div className=" max-w-[1160px] w-full mx-auto py-8 lg:py-16 xl:px-0 px-8  ">
+      <h2 className="text-center text-[20px] font-normal leading-7 font-hanken text-[#C4BFCE]">
+        Temurin has been adopted by over 30 companies
+      </h2>
+      <Slider {...settings} className="mt-6">
+        <span className="px-4">
+          <AdobeIcon />
+        </span>
+        <span className="px-4">
+          <GithubIcon />
+        </span>
+        <span className="px-4">
+          <AsansIcon />
+        </span>
+        <span className="px-4">
+          <GoogleIcon />
+        </span>
+        <span className="px-4">
+          <SlackIcon />
+        </span>
+        <span className="px-4">
+          <TogglIcon />
+        </span>
+      </Slider>
     </div>
   )
 }

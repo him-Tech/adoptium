@@ -53,12 +53,9 @@ const LatestNews = () => {
               open-source Java runtime binaries that are enterprise-ready and
               Java SE TCK-tested for general use in the Java ecosystem.
             </h3>
-            <a
-              href="#"
-              className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-base leading-6 font-bold py-3 px-8 block w-fit"
-            >
+            <button className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-base leading-6 font-bold w-[154px] h-[48px] block ">
               See all news
-            </a>
+            </button>
           </div>
           <div className="max-w-[780px] w-full lg:flex gap-4 xl:gap-x-8 hidden  ">
             {/* First set of news items */}

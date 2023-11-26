@@ -13,12 +13,9 @@ const PowerOfTemurin = () => {
           Java runtime binaries that are enterprise-ready and Java SE TCK-tested
           for general use in the Java ecosystem.
         </h3>
-        <a
-          href="#"
-          className="bg-transparent mt-10 border-2 border-pink-500/0 text-white font-bold py-2 px-4 rounded-2xl gradient-border"
-        >
+        <button className="bg-transparent mt-10 border-2 border-pink-500/0 text-white font-bold w-[191px] h-[48px] rounded-2xl gradient-border">
           Business Benefits
-        </a>
+        </button>
       </div>
       <UiVirtualScroll />
     </div>

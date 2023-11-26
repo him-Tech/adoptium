@@ -11,6 +11,8 @@ import Navbar from "./Navbar"
 import "./layout.css"
 import "../styles/latest.css"
 import Footer from "./Footer"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const Layout = ({ children }) => {
   return (
