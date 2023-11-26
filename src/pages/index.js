@@ -10,6 +10,7 @@ import Testimonials from "../components/Testimonials"
 import LatestNews from "../components/latest-news/LatestNews"
 import { AppleIcon, HeroBgImg } from "../components/common/Icon"
 import Contributors from "../components/contributors/Contributors"
+import Frequently from "../components/faq/Frequently"
 
 const Index = () => {
   return (
@@ -59,6 +60,7 @@ const Index = () => {
       <Projects />
       <Testimonials />
       <LatestNews />
+      <Frequently />
       <Contributors />
     </Layout>
   )
