@@ -10,6 +10,8 @@ import Testimonials from "../components/Testimonials"
 import LatestNews from "../components/latest-news/LatestNews"
 import { AppleIcon, HeroBgImg } from "../components/common/Icon"
 import Contributors from "../components/contributors/Contributors"
+import UiVirtualContent from "../components/UiVirtualScroll/UiVirtualContent"
+import OpenBased from "../components/open-based/OpenBased"
 
 const Index = () => {
   return (
@@ -56,6 +58,7 @@ const Index = () => {
       <div className="w-full h-[1px] my-8 lg:my-16 bg-[#3E3355]"></div>
       <PowerOfTemurin />
       <DownloadCounter />
+      <OpenBased />
       <Projects />
       <Testimonials />
       <LatestNews />
