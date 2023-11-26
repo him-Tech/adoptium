@@ -1,17 +1,17 @@
 import React from "react"
 
-import Layout from "../components/layout"
 import LogoCarousel from "../components/LogoCarousel"
-import PowerOfTemurin from "../components/Temurin/PowerOfTemurin"
-import Seo from "../components/seo"
-import DownloadCounter from "../components/Temurin/DownloadCounter"
 import Projects from "../components/Projects"
+import DownloadCounter from "../components/Temurin/DownloadCounter"
+import PowerOfTemurin from "../components/Temurin/PowerOfTemurin"
 import Testimonials from "../components/Testimonials"
-import LatestNews from "../components/latest-news/LatestNews"
 import { AppleIcon, HeroBgImg } from "../components/common/Icon"
 import Contributors from "../components/contributors/Contributors"
-import UiVirtualContent from "../components/UiVirtualScroll/UiVirtualContent"
+import Frequently from "../components/faq/Frequently"
+import LatestNews from "../components/latest-news/LatestNews"
+import Layout from "../components/layout"
 import OpenBased from "../components/open-based/OpenBased"
+import Seo from "../components/seo"
 
 const Index = () => {
   return (
@@ -62,6 +62,7 @@ const Index = () => {
       <Projects />
       <Testimonials />
       <LatestNews />
+      <Frequently />
       <Contributors />
     </Layout>
   )
