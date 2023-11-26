@@ -67,7 +67,7 @@ const Testimonials = () => {
             />
           </svg>
           <blockquote className={testimonialClassName}>
-            <span className="text-2xl font-medium text-gray-900 dark:text-white">
+            <span className="text-[32px] leading-10 font-semibold font-hanken  text-white">
               {testimonial.quote}
             </span>
           </blockquote>
