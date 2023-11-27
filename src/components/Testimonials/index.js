@@ -26,6 +26,22 @@ const testimonialData = [
     image:
       "https://th.bing.com/th/id/OIP.EhdrnPDN08Vtj8MgbvlOxQHaHa?rs=1&pid=ImgDetMain?",
   },
+  {
+    quote:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    name: "Jane Doe",
+    role: "CTO at Meta",
+    image:
+      "https://th.bing.com/th/id/OIP.EhdrnPDN08Vtj8MgbvlOxQHaHa?rs=1&pid=ImgDetMain?",
+  },
+  {
+    quote:
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    name: "Jane Doe",
+    role: "CTO at Meta",
+    image:
+      "https://th.bing.com/th/id/OIP.EhdrnPDN08Vtj8MgbvlOxQHaHa?rs=1&pid=ImgDetMain?",
+  },
 ]
 
 const Testimonials = () => {
@@ -56,7 +72,19 @@ const Testimonials = () => {
   const testimonialClassName =
     slideDirection === "right" ? "slide-in-right" : "slide-in-left"
   const testimonialKey = `${currentTestimonial}-${slideDirection}`
-
+  const logoSliderChangeHandler = value => {
+    console.log(value)
+    if (value === currentTestimonial) {
+      return
+    } else {
+      setCurrentTestimonial(value)
+      if (currentTestimonial > value) {
+        setSlideDirection("left")
+      } else {
+        setSlideDirection("right")
+      }
+    }
+  }
   return (
     <section className="bg-[#0E002A] overflow-x-hidden border-t border-[#3E3355]">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
@@ -107,17 +135,17 @@ const Testimonials = () => {
           </button>
         </div>
         <div className="max-w-[896px] mx-auto flex justify-center items-center mt-10 space-x-16">
-          <button>
-            <GithubSlider />
+          <button onClick={() => logoSliderChangeHandler(0)}>
+            <GithubSlider current={currentTestimonial} />
           </button>
-          <button>
-            <AsanaSlider />
+          <button onClick={() => logoSliderChangeHandler(1)}>
+            <AsanaSlider current={currentTestimonial} />
           </button>
-          <button>
-            <GoogleSlider />
+          <button onClick={() => logoSliderChangeHandler(2)}>
+            <GoogleSlider current={currentTestimonial} />
           </button>
-          <button>
-            <SlackSlider />
+          <button onClick={() => logoSliderChangeHandler(3)}>
+            <SlackSlider current={currentTestimonial} />
           </button>
         </div>
       </div>

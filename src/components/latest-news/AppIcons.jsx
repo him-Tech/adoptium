@@ -237,9 +237,11 @@ export const Lock = () => (
     </defs>
   </svg>
 )
-export const GithubSlider = () => (
+export const GithubSlider = ({ current }) => (
   <svg
-    className="hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] opacity-[0.25]"
+    className={`hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] ${
+      current == 0 ? "opacity-1" : "opacity-[0.25]"
+    } `}
     width="140"
     height="48"
     viewBox="0 0 140 48"
@@ -260,9 +262,11 @@ export const GithubSlider = () => (
     </g>
   </svg>
 )
-export const AsanaSlider = () => (
+export const AsanaSlider = ({ current }) => (
   <svg
-    className="hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] opacity-[0.25]"
+    className={`hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] ${
+      current == 1 ? "opacity-1" : "opacity-[0.25]"
+    } `}
     width="140"
     height="48"
     viewBox="0 0 140 48"
@@ -307,9 +311,11 @@ export const AsanaSlider = () => (
     />
   </svg>
 )
-export const GoogleSlider = () => (
+export const GoogleSlider = ({ current }) => (
   <svg
-    className="hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] opacity-[0.25]"
+    className={`hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] ${
+      current == 2 ? "opacity-1" : "opacity-[0.25]"
+    } `}
     width="140"
     height="48"
     viewBox="0 0 140 48"
@@ -344,9 +350,11 @@ export const GoogleSlider = () => (
     </g>
   </svg>
 )
-export const SlackSlider = () => (
+export const SlackSlider = ({ current }) => (
   <svg
-    className="hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] opacity-[0.25]"
+    className={`hover:fill-white hover:opacity-100 duration-200 ease-in-out fill-[#4F405A] ${
+      current == 3 ? "opacity-1" : "opacity-[0.25]"
+    } `}
     width="140"
     height="48"
     viewBox="0 0 140 48"
