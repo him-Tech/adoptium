@@ -1,5 +1,14 @@
 import React from "react"
 import { Disclosure } from "@headlessui/react"
+import {
+  MobileFooterCat,
+  MobileFooterFacebook,
+  MobileFooterIcon,
+  MobileFooterLinkedin,
+  MobileFooterSlack,
+  MobileFooterSocial,
+  MobileFooterYoutube,
+} from "../latest-news/AppIcons"
 
 // Replace 'CustomSVG' with your actual SVG component
 const CustomSVG = () => (
@@ -117,10 +126,40 @@ const CustomDisclosure = ({ title, links }) => (
 
 // Main App component
 const MobileFooter = () => (
-  <div className="flex flex-col space-y-4 p-4">
+  <div className="flex flex-col space-y-4 !mt-0">
     {disclosureData.map((data, index) => (
       <CustomDisclosure key={index} {...data} />
     ))}
+    <div className="border-t border-[#3E3355] !mt-8 ">
+      <div className="flex  items-center space-x-4 pt-8">
+        <div className="">
+          <MobileFooterIcon />
+        </div>
+        <p className="text-[#C4BFCE] text-sm font-normal leading-5 !mb-0">
+          Copyright © Eclipse Foundation. All Rights Reserved.
+        </p>
+      </div>
+      <div className="flex items-center space-x-6 mt-6">
+        <a href="">
+          <MobileFooterFacebook />
+        </a>
+        <a href="">
+          <MobileFooterSocial />
+        </a>
+        <a href="">
+          <MobileFooterCat />
+        </a>
+        <a href="">
+          <MobileFooterYoutube />
+        </a>
+        <a href="">
+          <MobileFooterLinkedin />
+        </a>
+        <a href="">
+          <MobileFooterSlack />
+        </a>
+      </div>
+    </div>
   </div>
 )
 

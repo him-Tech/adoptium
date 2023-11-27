@@ -55,7 +55,7 @@ const OpenBased = () => {
 
   return (
     <div className="OpenJDK-Based">
-      <div className=" lg:py-14 sm:py-18  mx-auto w-full">
+      <div className=" lg:py-14 md:py-18 pb-8 mx-auto w-full">
         <div className="mx-auto lg:pl-[88px] pl-6 w-full flex lg:flex-row flex-col items-start lg:items-end justify-center lg:space-x-8 xl:space-x-16 relative overflow-hidden">
           <div className="max-w-[600px] w-full flex flex-col justify-between mb-16 lg:mb-0">
             <div className="">

@@ -45,12 +45,12 @@ const Footer = (): JSX.Element => {
     <footer className="bg-blue">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-8 md:py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="hidden md:block">
-          <div className="grid grid-cols-1 gap-8 border-b border-gray-800 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+          <div className="grid grid-cols-1 gap-8 border-b border-gray-800 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16 ">
             <div>
               <p className="font-medium text-pink">Services</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -59,7 +59,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -68,7 +68,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -77,7 +77,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -86,7 +86,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -101,7 +101,7 @@ const Footer = (): JSX.Element => {
               <p className="font-medium text-pink">Company</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -110,7 +110,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -119,7 +119,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -134,7 +134,7 @@ const Footer = (): JSX.Element => {
               <p className="font-medium text-pink">Helpful Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -143,7 +143,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -152,7 +152,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -167,7 +167,7 @@ const Footer = (): JSX.Element => {
               <p className="font-medium text-pink">Legal</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -176,7 +176,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -185,7 +185,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -194,7 +194,7 @@ const Footer = (): JSX.Element => {
                   </a>
                 </li>
 
-                <li>
+                <li className="!mb-0">
                   <a
                     href="#"
                     className="text-white text-[16px] font-normal leading-6 font-hanken transition hover:opacity-75 dark:text-gray-200"
@@ -205,18 +205,13 @@ const Footer = (): JSX.Element => {
               </ul>
             </div>
           </div>
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <div className="text-teal-600 dark:text-teal-300">
-              <p className="text-[14px] flex items-center gap-4 text-white  font-normal leading-5 font-hanken">
-                <span>
-                  {/* <SmallLogoIcon /> */} Copyright © Eclipse Foundation. All
-                  Rights Reserved.
-                </span>
-              </p>
-            </div>
 
-            <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
-              <li>
+          <div className="flex items-center  justify-between mt-8">
+            <p className="text-[14px] text-white font-normal leading-5 !mb-0">
+              Copyright © Eclipse Foundation. All Rights Reserved.
+            </p>
+            <ul className=" flex justify-start gap-6 !mb-0 items-center sm:justify-end  ">
+              <li className="!mb-0">
                 <a
                   href="/"
                   rel="noreferrer"
@@ -240,7 +235,7 @@ const Footer = (): JSX.Element => {
                 </a>
               </li>
 
-              <li>
+              <li className="!mb-0">
                 <a
                   href="/"
                   rel="noreferrer"
@@ -264,7 +259,7 @@ const Footer = (): JSX.Element => {
                 </a>
               </li>
 
-              <li>
+              <li className="!mb-0">
                 <a
                   href="/"
                   rel="noreferrer"
@@ -284,7 +279,7 @@ const Footer = (): JSX.Element => {
                 </a>
               </li>
 
-              <li>
+              <li className="!mb-0">
                 <a
                   href="/"
                   rel="noreferrer"
@@ -308,7 +303,7 @@ const Footer = (): JSX.Element => {
                 </a>
               </li>
 
-              <li>
+              <li className="!mb-0">
                 <a
                   href="/"
                   rel="noreferrer"
@@ -334,7 +329,7 @@ const Footer = (): JSX.Element => {
             </ul>
           </div>
         </div>
-        <div className="w-full px-4  md:hidden block">
+        <div className="w-full md:hidden block !mt-0">
           <MobileFooter />
         </div>
       </div>
