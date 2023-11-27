@@ -3,7 +3,8 @@ import { Link } from "gatsby"
 import { FaYoutube, FaGithub, FaSlack, FaLinkedin } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { SmallLogoIcon } from "./common/Icon"
-
+import { Disclosure } from "@headlessui/react"
+import { ChevronUpIcon } from "@heroicons/react/20/solid"
 const Footer = (): JSX.Element => {
   return (
     <footer className="bg-blue">
@@ -178,7 +179,6 @@ const Footer = (): JSX.Element => {
               </span>
             </p>
           </div>
-
           <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
             <li>
               <a
