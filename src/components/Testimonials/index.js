@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react"
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline"
 
 import "./Testimonials.css"
+import {
+  AsanaSlider,
+  GithubSlider,
+  GoogleSlider,
+  SlackSlider,
+} from "../latest-news/AppIcons"
 
 const testimonialData = [
   {
@@ -52,7 +58,7 @@ const Testimonials = () => {
   const testimonialKey = `${currentTestimonial}-${slideDirection}`
 
   return (
-    <section className="bg-blue overflow-x-hidden">
+    <section className="bg-[#0E002A] overflow-x-hidden border-t border-[#3E3355]">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         <figure className="max-w-screen-md mx-auto" key={testimonialKey}>
           <svg
@@ -98,6 +104,20 @@ const Testimonials = () => {
           >
             <ChevronRightIcon className="h-6 w-6" />
             <div className="progress-border"></div>
+          </button>
+        </div>
+        <div className="max-w-[896px] mx-auto flex justify-center items-center mt-10 space-x-16">
+          <button>
+            <GithubSlider />
+          </button>
+          <button>
+            <AsanaSlider />
+          </button>
+          <button>
+            <GoogleSlider />
+          </button>
+          <button>
+            <SlackSlider />
           </button>
         </div>
       </div>
