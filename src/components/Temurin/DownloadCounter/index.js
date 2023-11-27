@@ -43,12 +43,12 @@ const DownloadCounter = () => {
   }, [animate])
 
   return (
-    <div className="bg-purple py-8 sm:py-16" ref={counterRef}>
+    <div className="bg-purple py-8 lg:py-16" ref={counterRef}>
       <div className="mx-auto max-w-[832px] w-full px-6 lg:px-0 flex flex-col items-center justify-center">
-        <h2 className="text-center text-[36px] sm:text-[48px] font-hanken font-semibold leading-[44px] sm:leading-[56px] text-white-900">
+        <h2 className="text-center text-[36px] sm:text-5xl font-semibold leading-[44px] sm:leading-[56px] text-white-900">
           Lorem ipsum dolor sit amet consectetur. Risus pretium aliquet
         </h2>
-        <h3 className="text-center text-6xl md:text-7xl font-semibold text-pink text-pink-800 my-8">
+        <h3 className="text-center text-[64px] lg:text-[104px] leading-[72px] lg:leading-[120px] font-semibold text-pink text-pink-800 my-8">
           {count.toLocaleString()}
         </h3>
         <div className="flex  items-center gap-4 flex-wrap sm:gap-6 justify-center">

@@ -23,11 +23,11 @@ const Projects = () => {
     <div className="bg-blue py-24 sm:py-28">
       <div className="mx-auto max-w-[1264px] w-full px-6 xl:px-0">
         <div className="mx-auto max-w-4xl sm:text-center">
-          <h2 className="text-center text-[36px] sm:text-[48px]  font-semibold text-white font-hanken sm:leading-[56px] leading-[44px] ">
+          <h2 className="text-center text-[36px] md:text-[48px] font-semibold text-white md:leading-[56px] leading-[44px] ">
             A short title about products
           </h2>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl mb-0 text-[16px] leading-6 font-hanken  text-[#C4BFCE] text-center">
+        <p className="mx-auto mt-6 max-w-2xl mb-0 text-base leading-6 text-[#C4BFCE] text-center">
           Eclipse Temurin offers high-performance, cross-platform, open-source
           Java runtime binaries that are enterprise-ready and Java SE TCK-tested
           for general use in the Java ecosystem.
@@ -44,15 +44,15 @@ const Projects = () => {
               <div className=" flex-col justify-center items-start gap-2">
                 <div className="justify-start items-center gap-3 inline-flex">
                   <div className="w-2 h-2 bg-rose-600 rounded-sm border-2 border-rose-600 border-opacity-25" />
-                  <p className="text-rose-600 mb-0 text-base font-hanken  font-bold">
+                  <p className="text-rose-600 mb-0 text-base leading-6 font-bold">
                     Overline
                   </p>
                 </div>
-                <h2 className="text-white text-[26px] sm:text-[32px] font-hanken leading-8 sm:leading-10 font-semibold">
+                <h2 className="text-white text-[26px] md:text-[32px] font-hanken leading-8 md:leading-10 font-semibold mt-2">
                   Eclipse Temurin™
                 </h2>
                 <a href="#">
-                  <button className="bg-transparent border-2 mt-8 sm:mt-10 border-pink-500/0 text-white font-bold w-[148px] h-[48px] rounded-2xl gradient-border">
+                  <button className="bg-transparent border-2 mt-8 sm:mt-10 border-pink-500/0 text-whit text-base leading-6 font-bold w-[148px] h-[48px] rounded-2xl gradient-border">
                     Learn More
                   </button>
                 </a>
@@ -70,15 +70,15 @@ const Projects = () => {
               <div className=" flex-col justify-center items-start gap-2">
                 <div className="justify-start items-center gap-3 inline-flex">
                   <div className="w-2 h-2 bg-rose-600 rounded-sm border-2 border-rose-600 border-opacity-25" />
-                  <p className="text-rose-600 mb-0 text-base font-bold">
+                  <p className="text-rose-600 mb-0 text-base leading-6 font-bold">
                     Overline
                   </p>
                 </div>
-                <h2 className="text-white text-[26px] sm:text-[32px] font-hanken leading-8 sm:leading-10 font-semibold">
+                <h2 className="text-white text-[26px] md:text-[32px] font-hanken leading-8 md:leading-10 font-semibold mt-2">
                   Eclipse AQAvit™
                 </h2>
                 <a href="#">
-                  <button className="bg-transparent border-2 mt-8 sm:mt-10 border-pink-500/0 text-white font-bold w-[148px] h-[48px] rounded-2xl gradient-border">
+                  <button className="bg-transparent border-2 mt-8 sm:mt-10 border-pink-500/0 text-whit text-base leading-6 font-bold w-[148px] h-[48px] rounded-2xl gradient-border">
                     Learn More
                   </button>
                 </a>
@@ -96,15 +96,15 @@ const Projects = () => {
               <div className=" flex-col justify-center items-start gap-2">
                 <div className="justify-start items-center gap-3 inline-flex">
                   <div className="w-2 h-2 bg-rose-600 rounded-sm border-2 border-rose-600 border-opacity-25" />
-                  <p className="text-rose-600 mb-0 text-base font-bold">
+                  <p className="text-rose-600 mb-0 text-base leading-6 font-bold">
                     Overline
                   </p>
                 </div>
-                <h2 className="text-white text-[26px] sm:text-[32px] font-hanken leading-8 sm:leading-10 font-semibold">
+                <h2 className="text-white text-[26px] md:text-[32px] font-hanken leading-8 md:leading-10 font-semibold mt-2">
                   Eclipse Mission Control™
                 </h2>
                 <a href="#">
-                  <button className="bg-transparent border-2 mt-8 sm:mt-10 border-pink-500/0 text-white font-bold w-[148px] h-[48px] rounded-2xl gradient-border">
+                  <button className="bg-transparent border-2 mt-8 sm:mt-10 border-pink-500/0 text-whit text-base leading-6 font-bold w-[148px] h-[48px] rounded-2xl gradient-border">
                     Learn More
                   </button>
                 </a>

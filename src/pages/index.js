@@ -27,26 +27,26 @@ const Index = () => {
           ></div>
           <div className="mx-auto max-w-[832px] w-full h-[680px] sm:h-[720px] px-8 lg:px-0 flex items-center">
             <div className="text-center w-full">
-              <h1 className="font-bold tracking-tight leading-[70px] lg:leading-[120px] text-white-900 text-[64px] lg:text-[104px]">
+              <h1 className="font-semibold leading-[72px] lg:leading-[120px] text-white-900 text-[64px] lg:text-[104px]">
                 The Power of Eclipse Temurin™
               </h1>
-              <p className="mt-6 text-[22px] leading-8 text-white-600">
+              <p className="lg:my-10 mt-6  mb-10 text-2xl leading-8 text-white-600  font-semibold">
                 Download Temurin™ for macOS aarch64
               </p>
               <div className="mt-10 flex items-center sm:flex-row flex-col-reverse justify-center gap-6">
                 <a
                   href="#"
-                  className="text-sm underline transition duration-300 ease-in-out font-semibold leading-6 text-white-900"
+                  className="text-base underline transition duration-300 ease-in-out font-bold leading-6 text-white-900"
                 >
                   Learn More
                 </a>
                 <a
                   href="#"
-                  className="rounded-[80px] bg-[#FF1464] hover:bg-transparent border transition duration-300 ease-in-out hover:text-[#FF1464] border-[#FF1464] flex items-center justify-center gap-3 w-[244px] h-[56px] text-white font-bold leading-6 text-[16px]  "
+                  className="rounded-[80px] bg-[#FF1464] hover:bg-transparent border transition duration-300 ease-in-out hover:text-[#FF1464] border-[#FF1464] flex items-center justify-center gap-3 w-[244px] h-[56px] text-white font-bold leading-6 text-base"
                 >
                   <span>
                     <AppleIcon />
-                  </span>{" "}
+                  </span>
                   Download Temurin™
                 </a>
               </div>

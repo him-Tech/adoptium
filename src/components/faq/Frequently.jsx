@@ -2,7 +2,6 @@ import React, { useState } from "react"
 
 const Frequently = () => {
   const [openFaq, setOpenFaq] = useState(null)
-
   const handleToggleFaq = index => {
     setOpenFaq(prevOpenFaq => (prevOpenFaq === index ? null : index))
   }
