@@ -8,10 +8,10 @@ const Frequently = () => {
 
   return (
     <>
-      <div className="mx-auto max-w-[1264px] px-4 flex flex-col gap-3 items-center lg:flex-row justify-between">
-        <div className=" md:max-w-[420px] newscard w-full p-[24px] flex flex-col justify-between">
+      <div className="mx-auto max-w-[1264px] px-4 xl:px-0 flex flex-col gap-[64px] lg:gap-3 items-center lg:items-start lg:flex-row justify-between">
+        <div className=" md:max-w-[420px] newscard w-full  md:h-[552px] p-[24px] flex flex-col justify-between">
           <div>
-            <h3 className="text-[40px] font-semibold leading-[48px] font-hanken">
+            <h3 className="text-[30px]  sm:text-[40px] font-semibold leading-9 sm:leading-[48px] font-hanken">
               Frequently asked questions
             </h3>
             <p className="text-[20px] font-normal font-hanken leading-[28px] text-[#C4BFCE] mt-[24px]">
@@ -33,13 +33,13 @@ const Frequently = () => {
             {[0, 1, 2, 3, 4, 5].map(index => (
               <div
                 key={index}
-                className={`flex flex-col py-3 border-[#3E3355] border-b ${
+                className={`flex flex-col py-6 first:pt-0 border-[#3E3355] border-b ${
                   openFaq === index ? "" : ""
                 }`}
               >
                 <div
                   onClick={() => handleToggleFaq(index)}
-                  className="flex justify-between items-center cursor-pointer"
+                  className="flex justify-between gap-2 items-center cursor-pointer"
                 >
                   <h3 className="text-[20px] font-semibold leading-[28px]">
                     Where are the latest Adoptium® JDKs?
@@ -62,6 +62,9 @@ const Frequently = () => {
                         stroke-width="2"
                       />
                       <path
+                        className={` transition duration-700 ease-in-out ${
+                          openFaq === index ? "rotate-90" : "rotate-0"
+                        }`}
                         d="M24 17V31"
                         stroke="white"
                         stroke-width="1.5"
@@ -78,16 +81,24 @@ const Frequently = () => {
                     </svg>
                   </span>
                 </div>
-                {openFaq === index && (
-                  <div className="flex items-center">
-                    <p className="my-0 pt-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quidem, itaque culpa in recusandae ipsam ea quisquam
-                      temporibus praesentium quas esse animi cupiditate dicta
-                      qui maxime quam, doloremque iure. Repudiandae, animi.
-                    </p>
-                  </div>
-                )}
+                <div
+                  className={`flex transition duration-700 ease-in-out items-center ${
+                    openFaq === index
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-7 opacity-0"
+                  }`}
+                >
+                  {openFaq === index && (
+                    <div className={`flex `}>
+                      <p className="my-0 pt-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quidem, itaque culpa in recusandae ipsam ea quisquam
+                        temporibus praesentium quas esse animi cupiditate dicta
+                        qui maxime quam, doloremque iure. Repudiandae, animi.
+                      </p>
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>
