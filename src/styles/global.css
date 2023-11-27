@@ -41,7 +41,8 @@ body {
 }
 
 .gradient-border:hover {
-  border-image-source: linear-gradient(to top left, var(--pink), var(--purple));
+  transform: scale(110%);
+  transition-duration: 300ms;
 }
 
 @media (min-width: 640px) {
