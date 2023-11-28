@@ -64,7 +64,6 @@ const Contributors = () => {
       content: "2 contribution (s) to STF",
       style: {
         marginTop: "40px",
-        zIndex: "10",
       },
     },
   ]
@@ -73,7 +72,7 @@ const Contributors = () => {
   const set3 = contributorscard.slice(4, 6)
   return (
     <>
-      <div className="bg-purple xl:px-0 lg:px-8 px-0 w-full overflow-hidden md:flex flex-col items-center justify-center max-w-[1440px] mx-auto hidden">
+      <div className=" xl:px-0 lg:px-8 px-0 w-full overflow-hidden md:flex flex-col items-center justify-center  mx-auto hidden contributors">
         {/* ==========================================SET-1=============================================== */}
         <div className="flex w-fit space-x-4 sm:space-x-[210px] md:mx-auto justify-between items-end mt-[81px] xl:ml-[461px] overflow-hidden">
           {set1.map((staff, contributionsCount) => (

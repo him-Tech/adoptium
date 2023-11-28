@@ -22,6 +22,24 @@
   z-index: -1;
   background-image: url(../img/linear-bg.png);
 }
+.contributors {
+  position: relative;
+  width: 100%;
+}
+.contributors::after {
+  content: "";
+  position: absolute;
+  bottom: -600px;
+  right: 0px;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 150%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(../img/linear-bg.png);
+  opacity: 0.45;
+}
 
 @media screen and (max-width: 800px) {
   .OpenJDK-Based::after {
