@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         primary: "#FF1464",
       },
+      backgroundColor: {
+        "tones-white": "var(--tones-white-5, rgba(255, 255, 255, 0.05))",
+      },
       screens: {
         vs: "360px",
         // => @media (min-width: 360) { ... }
