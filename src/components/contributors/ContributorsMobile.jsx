@@ -1,8 +1,7 @@
 import React from "react"
 import Staff from "../../img/contributor.png"
-import ContributorsMobile from "./ContributorsMobile"
 
-const Contributors = () => {
+const ContributorsMobile = () => {
   const contributorscard = [
     {
       id: 1,
@@ -10,7 +9,7 @@ const Contributors = () => {
       thanksMessage: "Thank you sxa for making",
       content: "2 contribution (s) to STF",
       style: {
-        marginBottom: "100px",
+        marginTop: "100px",
         width: "305px",
       },
     },
@@ -22,6 +21,7 @@ const Contributors = () => {
       style: {
         height: "fit-content",
         width: "305px",
+        marginBottom: "100px",
       },
     },
     {
@@ -73,7 +73,7 @@ const Contributors = () => {
   const set3 = contributorscard.slice(4, 6)
   return (
     <>
-      <div className="bg-purple xl:px-0 lg:px-8 px-0 w-full overflow-hidden md:flex flex-col items-center justify-center max-w-[1440px] mx-auto hidden">
+      <div className="bg-purple xl:px-0 lg:px-8 px-0 w-full overflow-hidden flex flex-col items-center justify-center max-w-[1440px] mx-auto ">
         {/* ==========================================SET-1=============================================== */}
         <div className="flex w-fit space-x-4 sm:space-x-[210px] md:mx-auto justify-between items-end mt-[81px] xl:ml-[461px] overflow-hidden">
           {set1.map((staff, contributionsCount) => (
@@ -199,9 +199,8 @@ const Contributors = () => {
           ))}
         </div>
       </div>
-      <ContributorsMobile />
     </>
   )
 }
 
-export default Contributors
+export default ContributorsMobile
