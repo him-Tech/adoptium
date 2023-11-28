@@ -100,12 +100,15 @@ const Testimonials = () => {
               fill="currentColor"
             />
           </svg>
-          <blockquote className={testimonialClassName}>
-            <span className="text-[32px] leading-10 font-semibold font-hanken  text-white">
+          <blockquote
+            className={testimonialClassName}
+            style={{ minHeight: "204px" }}
+          >
+            <span className="md:text-[32px] text-[26px] leading-[34px] md:leading-10 font-semibold font-hanken  text-white">
               {testimonial.quote}
             </span>
           </blockquote>
-          <figcaption className="flex items-center justify-center mt-6 space-x-3">
+          <figcaption className="flex items-center justify-center md:mt-6 mt-0 space-x-3">
             <img
               className="w-6 h-6 mb-0 rounded-full"
               src={testimonial.image}
@@ -134,7 +137,7 @@ const Testimonials = () => {
             <div className="progress-border"></div>
           </button>
         </div>
-        <div className="max-w-[896px] mx-auto flex justify-center items-center mt-10 space-x-16">
+        <div className="max-w-[896px] mx-auto flex flex-wrap justify-center items-center mt-10 gap-6 md:space-x-16 ">
           <button onClick={() => logoSliderChangeHandler(0)}>
             <GithubSlider current={currentTestimonial} />
           </button>

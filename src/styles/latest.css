@@ -4,23 +4,7 @@
   background: var(--tones-white-5, rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(12px);
 }
-.contributors {
-  position: relative;
-  width: 100%;
-}
-.contributors::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../img/contributors-bg.webp);
-  background-size: cover;
-  background-position: center;
-  width: 100% !important;
-  height: 100%;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
+
 .OpenJDK-Based {
   position: relative;
   width: 100%;
@@ -40,10 +24,6 @@
 }
 
 @media screen and (max-width: 800px) {
-  .contributors:after {
-    background-image: url(../img/mobile-bg.png);
-    background-size: 100% 100% !important;
-  }
   .OpenJDK-Based::after {
     content: "";
     position: absolute;
@@ -58,3 +38,14 @@
     background-image: url(../img/linear-bg-mobile.png);
   }
 }
+
+@media screen and (max-width: 1380px) {
+  .thank-greeting {
+    font-size: 85px !important;
+    line-height: 70px;
+  }
+}
+/* .thank-greeting {
+  font-size: 104px !important;
+  line-height: 120px;
+} */
