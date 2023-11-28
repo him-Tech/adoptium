@@ -9,7 +9,7 @@
   height: 100%;
   width: 0.2em;
   background: linear-gradient(to top, grey, grey);
-  clip-path: polygon(50% 0%, 100% 10%, 50% 100%, 0% 10%);
+  clippath: polygon(50% 0%, 100% 10%, 50% 100%, 0% 10%);
 }
 
 .progress-fill {

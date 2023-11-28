@@ -27,21 +27,21 @@ const CustomSVG = () => (
         height="46"
         rx="23"
         stroke="#3E3355"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <path
         d="M24 17V31"
         stroke="white"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17 24H31"
         stroke="white"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   </div>
