@@ -7,6 +7,8 @@ import UsingTemurin from "../components/about-eclipse-adoptium/using-temurin/Usi
 import divider from "../.././src/img/page-divider.png"
 import Community from "../components/about-eclipse-adoptium/connect-with-the-community/Community"
 import OurPartners from "../components/about-eclipse-adoptium/our-partners/OurPartners"
+import PromoteSection from "../components/about-eclipse-adoptium/promote-section/PromoteSection"
+import SupportUs from "../components/about-eclipse-adoptium/ways-to-support-us/SupportUs"
 
 const AboutEclipse = () => {
   return (
@@ -33,6 +35,8 @@ const AboutEclipse = () => {
       <UsingTemurin />
       <Community />
       <OurPartners />
+      <PromoteSection />
+      <SupportUs />
       <Footer />
     </>
   )
