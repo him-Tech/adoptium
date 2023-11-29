@@ -40,7 +40,23 @@
   background-image: url(../img/linear-bg.png);
   opacity: 0.45;
 }
-
+.community {
+  position: relative;
+  width: 100%;
+}
+.community::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url(../img/gradient-overlay.png);
+}
 @media screen and (max-width: 800px) {
   .OpenJDK-Based::after {
     content: "";
@@ -54,6 +70,12 @@
     background-repeat: no-repeat;
     z-index: -1;
     background-image: url(../img/linear-bg-mobile.png);
+  }
+}
+@media screen and (max-width: 767px) {
+  .community::after {
+    background-image: url(../img/gradient-overlay-mobile.png);
+    z-index: -1;
   }
 }
 

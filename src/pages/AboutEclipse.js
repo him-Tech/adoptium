@@ -5,6 +5,8 @@ import LatestReleases from "../components/about-eclipse-adoptium/latest-releases
 import Experience from "../components/about-eclipse-adoptium/experience/Experience"
 import UsingTemurin from "../components/about-eclipse-adoptium/using-temurin/UsingTemurin"
 import divider from "../.././src/img/page-divider.png"
+import Community from "../components/about-eclipse-adoptium/connect-with-the-community/Community"
+import OurPartners from "../components/about-eclipse-adoptium/our-partners/OurPartners"
 
 const AboutEclipse = () => {
   return (
@@ -29,6 +31,8 @@ const AboutEclipse = () => {
         <img src={divider} className="w-full h-6" alt="scroll-divider" />
       </div>
       <UsingTemurin />
+      <Community />
+      <OurPartners />
       <Footer />
     </>
   )
