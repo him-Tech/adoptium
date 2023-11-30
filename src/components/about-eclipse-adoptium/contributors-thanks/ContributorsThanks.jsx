@@ -9,7 +9,7 @@ const ContributorsThanks = () => {
           Thank you to our <span className="text-[#FF1464]">300+</span>
           contributors
         </h3>
-        <div className="bg-tones-white rounded-[24px] gap-4 backdrop-blur-[12px] border-white border p-[16px] flex justify-between items-center">
+        <div className="bg-tones-white rounded-[24px] gap-4 backdrop-blur-[12px] border-[#574974] border p-[14px] flex justify-between items-center">
           <div>
             <img
               className="w-[72px] h-[72px] my-0"

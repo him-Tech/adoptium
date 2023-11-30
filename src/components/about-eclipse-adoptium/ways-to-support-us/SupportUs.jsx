@@ -3,7 +3,7 @@ import React from "react"
 const SupportUs = () => {
   return (
     <>
-      <div className="px-6 md:px-3 xl:0 py-[64px] font-hanken">
+      <div className="px-6 md:px-3 xl:0  pb-[64px] md:py-[64px] font-hanken">
         <div className="max-w-[840px] w-full mx-auto">
           <h3
             className="text-[36px] leading-[44px]
@@ -18,7 +18,7 @@ const SupportUs = () => {
             money contributed to the Eclipse Foundation will be used to support
             the Eclipse community through the Adoptium working group.
           </p>
-          <div className="flex gap-8 flex-wrap justify-between items-center  mt-[64px]">
+          <div className="flex gap-8 lg:gap-0 flex-wrap justify-center lg:justify-between items-center   mt-[64px]">
             <div className="max-w-[410px] w-full  p-[32px] lg:p-[40px] newscard">
               {/* #################################################### for mobile #################################################### */}
               <h3 className="text-[30px] leading-[38px]  font-normal  md:hidden">

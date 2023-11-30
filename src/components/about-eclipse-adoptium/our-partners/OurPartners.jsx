@@ -119,11 +119,11 @@ const OurPartners = () => {
                     </h2>
                   </div>
                   <div className="min-w-full overflow-auto">
-                    <div className="grid grid-cols-4 gap-6 min-w-[866px] md:min-w-[1220px]">
+                    <div className="grid grid-cols-4 gap-4 md:gap-6 min-w-[850px] md:min-w-[1220px]">
                       {categories[category].partners.map(post => (
                         <div
                           key={post.id}
-                          className="relative border w-[200px] md:w-[296px] flex justify-center items-center border-white rounded-[24px] bg-tones-white backdrop-blur-[12px] px-3 py-4"
+                          className="relative border w-[200px] md:w-[296px] flex justify-center items-center border-[#574974] rounded-[20px] bg-tones-white backdrop-blur-[12px] px-3 py-4"
                         >
                           {post.svg}
                         </div>
@@ -136,7 +136,7 @@ const OurPartners = () => {
           </Tab.Group>
         </div>
 
-        <div className="flex justify-center flex-wrap items-center gap-5 mt-10">
+        <div className="flex justify-center flex-wrap items-center gap-6 mt-10">
           <p className="text-[20px] font-hanken leading-[28px] text-white my-0 text-center">
             Are you interested in becoming a member?
           </p>

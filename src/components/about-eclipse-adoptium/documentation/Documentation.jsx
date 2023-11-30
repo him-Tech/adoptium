@@ -2,7 +2,7 @@ import React from "react"
 
 const Documentation = () => {
   return (
-    <div className="max-w-[1264px] md:px-0 px-6 w-full mx-auto pb-20">
+    <div className="max-w-[1264px] md:px-0 px-6 w-full mx-auto py-20">
       <div className="max-w-[700px] mx-auto">
         <h3 className="text-[36px] sm:text-[42px] font-hanken leading-[56px] text-center">
           Documentation
@@ -13,8 +13,8 @@ const Documentation = () => {
           for general use in the Java ecosystem.
         </p>
       </div>
-      <div className="max-w-[1048px] mx-auto flex  justify-center gap-6 flex-wrap items-center mt-10">
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-white rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+      <div className="max-w-[1048px] mx-auto flex  justify-center gap-4 md:gap-6 flex-wrap items-center mt-10">
+        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -50,7 +50,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-white rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -86,7 +86,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-white rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -122,7 +122,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-white rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -158,7 +158,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px]  w-full flex justify-start gap-4 items-center border-white rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative border max-w-[290px]  w-full flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -194,7 +194,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-white rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -231,7 +231,7 @@ const Documentation = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center flex-wrap items-center gap-5 mt-10">
+      <div className="flex justify-center flex-wrap items-center gap-6 mt-10">
         <p className="text-[20px] font-hanken leading-[28px] text-white my-0 text-center">
           Are you interested in becoming a member?
         </p>
