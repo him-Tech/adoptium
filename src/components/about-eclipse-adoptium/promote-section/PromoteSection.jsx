@@ -24,7 +24,7 @@ const PromoteSection = () => {
                 </span>
               </p>
             </div>
-            <div className="max-w-[360px] w-full mx-auto lg:mx-0 mt-[64px] lg:mt-0 p-[32px] md:p-[40px] newscard  border-white rounded-[24px] border-[1px] border-opacity-20  ">
+            <div className="max-w-[360px] w-full mx-auto lg:mx-0 mt-[64px] lg:mt-0 p-[32px] md:p-[40px] supportus-card   rounded-[24px]    ">
               <h3 className="text-[30px] md:text-[40px] font-hanken font-normal leading-[48px] text-white ">
                 Media & Promotion
               </h3>

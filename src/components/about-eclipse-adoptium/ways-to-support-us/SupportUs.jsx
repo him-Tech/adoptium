@@ -19,7 +19,7 @@ const SupportUs = () => {
             the Eclipse community through the Adoptium working group.
           </p>
           <div className="flex gap-8 lg:gap-0 flex-wrap justify-center lg:justify-between items-center   mt-[64px]">
-            <div className="max-w-[410px] w-full  p-[32px] lg:p-[40px] newscard">
+            <div className="max-w-[400px] w-full  p-[32px] lg:p-[40px] supportus-card">
               {/* #################################################### for mobile #################################################### */}
               <h3 className="text-[30px] leading-[38px]  font-normal  md:hidden">
                 How to contribute
@@ -37,7 +37,7 @@ const SupportUs = () => {
               </button>
             </div>
 
-            <div className="max-w-[400px] w-full p-[32px] lg:p-[40px] newscard">
+            <div className="max-w-[400px] w-full p-[32px] lg:p-[40px] supportus-card">
               {/* #################################################### for mobile #################################################### */}
               <h3 className="text-[30px] leading-[38px]  font-normal  md:hidden">
                 Become a sponsor

@@ -14,7 +14,7 @@ const Documentation = () => {
         </p>
       </div>
       <div className="max-w-[1048px] mx-auto flex  justify-center gap-4 md:gap-6 flex-wrap items-center mt-10">
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative documentation-card  max-w-[290px] w-full  flex justify-start gap-4 items-center rounded-[22px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -50,7 +50,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative  documentation-card max-w-[290px] w-full  flex justify-start gap-4 items-center rounded-[22px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -86,7 +86,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative  documentation-card max-w-[290px] w-full  flex justify-start gap-4 items-center rounded-[22px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -122,7 +122,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative  documentation-card max-w-[290px] w-full  flex justify-start gap-4 items-center rounded-[22px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -158,7 +158,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px]  w-full flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative  documentation-card max-w-[290px]  w-full flex justify-start gap-4 items-center rounded-[22px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"
@@ -194,7 +194,7 @@ const Documentation = () => {
             Get Temurin
           </p>
         </div>
-        <div className="relative border max-w-[290px] w-full  flex justify-start gap-4 items-center border-[#574974] rounded-[24px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
+        <div className="relative  documentation-card max-w-[290px] w-full  flex justify-start gap-4 items-center rounded-[22px] bg-tones-white backdrop-blur-[12px] px-6 py-5">
           <span>
             <svg
               width="32"

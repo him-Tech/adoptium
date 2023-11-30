@@ -48,7 +48,7 @@ const LatestReleases = () => {
           {LatestReleasesCard.map((card, more) => (
             <div
               key={more}
-              className="newscard p-8 hover:border-primary border transition-all duration-300 ease-in-out rounded-3xl bg-tones-white backdrop-blur-12"
+              className="newscard-2  element-with-gradient-border p-8  transition-all duration-300 ease-in-out rounded-3xl bg-tones-white backdrop-blur-12"
             >
               <h2 className="text-primary text-base leading-6 font-normal underline flex items-center gap-x-3">
                 <span className="">
