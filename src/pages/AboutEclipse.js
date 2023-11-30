@@ -7,13 +7,8 @@ import UsingTemurin from "../components/about-eclipse-adoptium/using-temurin/Usi
 import divider from "../.././src/img/page-divider.png"
 import Community from "../components/about-eclipse-adoptium/connect-with-the-community/Community"
 import OurPartners from "../components/about-eclipse-adoptium/our-partners/OurPartners"
-<<<<<<< HEAD
-import Documentation from "../components/about-eclipse-adoptium/documentation/Documentation"
-import ContributorsThanks from "../components/about-eclipse-adoptium/contributors-thanks/ContributorsThanks"
-=======
 import PromoteSection from "../components/about-eclipse-adoptium/promote-section/PromoteSection"
 import SupportUs from "../components/about-eclipse-adoptium/ways-to-support-us/SupportUs"
->>>>>>> f6d3040d6f8d3d81092c6e4c0d1603373812a7ad
 
 const AboutEclipse = () => {
   return (
@@ -61,13 +56,8 @@ const AboutEclipse = () => {
       <UsingTemurin />
       <Community />
       <OurPartners />
-<<<<<<< HEAD
-      <Documentation />
-      <ContributorsThanks />
-=======
       <PromoteSection />
       <SupportUs />
->>>>>>> f6d3040d6f8d3d81092c6e4c0d1603373812a7ad
       <Footer />
     </>
   )
