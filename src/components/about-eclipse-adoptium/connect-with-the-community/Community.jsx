@@ -15,7 +15,7 @@ const Community = () => {
             Java runtime binaries that are enterprise-ready and Java SE
             TCK-tested for general use in the Java ecosystem.
           </span>
-          <button className=" !bg-transparent mt-10 border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[146px] h-[48px] rounded-[80px] gradient-btn">
+          <button className=" !bg-transparent mt-10 border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[146px] h-[48px] rounded-[80px] gradient-btn  transition-all duration-500 ease-in-out">
             Learn More
           </button>
         </div>

@@ -36,10 +36,10 @@ const LatestReleases = () => {
   return (
     <>
       <section className="px-6 xl:px-0 flex flex-col items-center justify-center py-8 lg:py-16">
-        <h2 className="text-white md:text-[56px] text-5xl font-normal leading-[44px] md:leading-[56px] text-center">
+        <h2 className="text-white text-[36px] md:text-[48px] font-normal font-hanken leading-[44px] md:leading-[56px] text-center mt-8">
           Latest Releases
         </h2>
-        <p className="text-center mt-6 text-[#C4BFCE] text-base font-normal leading-6">
+        <p className="text-center mt-6 text-[#C4BFCE] text-[16px] font-hanken font-normal mb-0 leading-6">
           Eclipse Temurin offers high-performance, cross-platform, open-source
           Java runtime <br /> binaries that are enterprise-ready and Java SE
           TCK-tested for general use in the Java ecosystem.
@@ -48,7 +48,7 @@ const LatestReleases = () => {
           {LatestReleasesCard.map((card, more) => (
             <div
               key={more}
-              className="newscard-2  element-with-gradient-border p-8  transition-all duration-300 ease-in-out rounded-3xl bg-tones-white backdrop-blur-12"
+              className="newscard-2 max-w-[420px] w-full  md:w-auto  p-8  transition-all duration-300 ease-in-out rounded-3xl bg-tones-white backdrop-blur-12"
             >
               <h2 className="text-primary text-base leading-6 font-normal underline flex items-center gap-x-3">
                 <span className="">
@@ -66,7 +66,7 @@ const LatestReleases = () => {
                 href={card.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base font-bold leading-6 text-white  bg-primary rounded-[80px] w-[169px] h-[56px] mt-8 flex items-center justify-center gap-3 border border-primary hover:bg-transparent hover:text-primary duration-300 ease-in-out"
+                className="text-base font-bold leading-6 text-white  bg-primary rounded-[80px] w-[169px] h-[56px] mt-8 flex items-center justify-center gap-3 border border-primary hover:shadow-slate-900 hover:shadow-2xl transition-all duration-300 ease-in-out"
               >
                 <span>
                   <AppleIcon />
@@ -76,11 +76,11 @@ const LatestReleases = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-wrap justify-center  items-center gap-x-10 sm:gap-y-0 gap-y-6">
+        <div className="flex flex-wrap justify-center  items-center gap-x-14 sm:gap-y-0 gap-y-6">
           <p className="text-xl text-white font-normal leadig-7 !mb-0 text-center">
             Eclipse Temurin offers high-performance
           </p>
-          <button className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[179px] h-[48px] ">
+          <button className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[179px] h-[48px]  transition-all duration-500 ease-in-out">
             See all Releases
           </button>
         </div>

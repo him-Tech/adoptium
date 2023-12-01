@@ -22,10 +22,10 @@ const Experience = () => {
             ultrices rutrum. Eget molestie sit tellus viverra. Bibendum at ut eu
             feugiat tellus diam turpis.
           </p>
-          <button className="bg-transparent mt-10 border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[150px] h-[48px] rounded-2xl gradient-border lg:block hidden">
+          <button className="bg-transparent mt-10 border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[150px] h-[48px] rounded-2xl gradient-border lg:block hidden  transition-all duration-500 ease-in-out">
             Who we are
           </button>{" "}
-          <button className="bg-transparent mt-10 border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[151px] h-[48px] rounded-2xl gradient-border block lg:hidden">
+          <button className="bg-transparent mt-10 border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[151px] h-[48px] rounded-2xl gradient-border block lg:hidden transition-all duration-500 ease-in-out">
             Get a Quote
           </button>
         </div>

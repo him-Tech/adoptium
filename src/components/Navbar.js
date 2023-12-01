@@ -188,7 +188,7 @@ const Navbar = () => {
             )
           )}
         </div>
-        <button className="rounded-[88px] hidden sm:block bg-transparent gradient-border border-2  border-pink-500/0 text-white text-sm font-semibold w-[153px] h-[48px]">
+        <button className="rounded-[88px] hidden sm:block bg-transparent gradient-border border-2  border-pink-500/0 text-white text-sm font-semibold w-[153px] h-[48px] transition-all ease-in-out duration-500">
           Contact Us
         </button>
       </nav>

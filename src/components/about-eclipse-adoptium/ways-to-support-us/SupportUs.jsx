@@ -32,7 +32,7 @@ const SupportUs = () => {
                 Eclipse Temurin offers high-performance, cross-platform,
                 open-source Java runtime.
               </p>
-              <button className="bg-transparent mt-[145px] border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[146px] h-[48px] rounded-[80px] gradient-border ">
+              <button className="bg-transparent mt-[145px] border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[146px] h-[48px] rounded-[80px] gradient-border  transition-all duration-500 ease-in-out ">
                 Learn More
               </button>
             </div>
@@ -50,7 +50,7 @@ const SupportUs = () => {
                 Eclipse Temurin offers high-performance, cross-platform,
                 open-source Java runtime.
               </p>
-              <button className="bg-transparent mt-[145px] border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[197px] h-[48px] rounded-[80px] gradient-border ">
+              <button className="bg-transparent mt-[145px] border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[197px] h-[48px] rounded-[80px] gradient-border  transition-all duration-500 ease-in-out">
                 Become a sponsor
               </button>
             </div>

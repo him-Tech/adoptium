@@ -2,6 +2,7 @@ import React from "react"
 import { useState } from "react"
 import { Tab } from "@headlessui/react"
 import { GithubIcon } from "../../common/Icon"
+import { Link } from "gatsby"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -121,12 +122,14 @@ const OurPartners = () => {
                   <div className="min-w-full overflow-auto">
                     <div className="grid grid-cols-4 gap-4 md:gap-6 min-w-[850px] md:min-w-[1220px]">
                       {categories[category].partners.map(post => (
-                        <div
-                          key={post.id}
-                          className="github relative  w-[200px] md:w-[296px] flex justify-center items-center  rounded-[20px] bg-tones-white backdrop-blur-[12px] px-3 py-4"
-                        >
-                          {post.svg}
-                        </div>
+                        <Link href="">
+                          <div
+                            key={post.id}
+                            className="github relative  w-[200px] md:w-[296px] h-[86px] md:h-[112px] flex justify-center items-center  rounded-[20px] bg-tones-white backdrop-blur-[12px] px-4 py-5"
+                          >
+                            {post.svg}
+                          </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -136,11 +139,11 @@ const OurPartners = () => {
           </Tab.Group>
         </div>
 
-        <div className="flex justify-center flex-wrap items-center gap-6 mt-10">
+        <div className="flex justify-center flex-wrap items-center gap-14 mt-10">
           <p className="text-[20px] font-hanken leading-[28px] text-white my-0 text-center">
             Are you interested in becoming a member?
           </p>
-          <button className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[179px] h-[48px] ">
+          <button className="rounded-2xl bg-transparent gradient-border border-2 border-pink-500/0 text-white text-base leading-6 font-normal w-[179px] h-[48px]  transition-all duration-500 ease-in-out ">
             Become a Member
           </button>
         </div>
