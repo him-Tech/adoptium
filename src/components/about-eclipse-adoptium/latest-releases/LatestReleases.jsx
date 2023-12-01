@@ -66,7 +66,7 @@ const LatestReleases = () => {
                 href={card.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base font-bold leading-6 text-white  bg-primary rounded-[80px] w-[169px] h-[56px] mt-8 flex items-center justify-center gap-3 border border-primary hover:shadow-slate-900 hover:shadow-2xl transition-all duration-300 ease-in-out"
+                className="text-base font-bold leading-6 text-white  bg-primary hover:shadow-lg hover:shadow-primary hover:scale-105 rounded-[80px] w-[169px] h-[56px] mt-8 flex items-center justify-center gap-3 border border-primary transition-all duration-300 ease-in-out"
               >
                 <span>
                   <AppleIcon />
